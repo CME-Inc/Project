@@ -1,0 +1,280 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+#city{
+  background: #ff4f4f;
+  top: 10vh;
+}
+#category{
+  background: #5a9bd5;
+}
+.slide{
+  background: yellow;
+}
+.topBar{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  background: #fff;
+}
+.topMost{
+  position: relative;
+  z-index: 101;
+  background: #555;
+  height: 9vh;
+}
+.botBar{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  height: 5vh;
+  z-index: 100;
+}
+.botMost{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #555;
+  z-index: 101;
+  height: 4vh;
+}
+.logo{
+  position: fixed;
+  z-index: 102;
+  top: -2vh;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+.firstStep{
+  left: 50vw;
+  transform: translateX(-50%);
+  position: relative;
+  width: 200px;
+}
+.input-field{
+  left: 20vw;
+  width: 60vw;
+  position: absolute;
+  top: 25%;
+}
+.form-wrapper{
+  background: #fff;
+  position: relative;
+  width: 100vw;
+  top: vh;
+  height: 30vh;
+  box-shadow: inset 0 8px 10px -8px #000, inset 0 -8px 10px -8px #000;
+}
+.nextSlide, .submit{
+  background: red;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 10%;
+}
+.popup{
+  position: absolute;
+  z-index: 105;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.47);
+  top: 0;
+  left: 0;
+}
+.msgPopup{
+  top: 25vh;
+  height: 50vh;
+  width: 50vw;
+  left: 25vw;
+  background: #c2c2c2;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 62px 6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 62px 6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 62px 6px rgba(0,0,0,1);
+}
+.wtf{
+  display: block;
+}
+#toast-container {
+  top: auto !important;
+  bottom: 35vh;
+}
+.wrapper-coll{
+  width: auto;
+  position: absolute;
+  top: 20vh;
+}
+.collapsible-body{
+  height: 70vh;
+  background: red;
+  overflow: scroll;
+}
+.msgAfterInput{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.95);
+  top: 0;
+  right: 0;
+}
+.msgFR{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  display: block;
+  color: white;
+}
+.ok{
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  color: white;
+}
+.element{
+  width: 100%;
+  height: 20vh;
+  background: #5a9bd5;
+  transition: 1s ease-in-out
+}
+.doctor-wrapper{
+  position: relative;
+  top: 20vh;
+  width: 60vw;
+  left: 20vw;
+}
+.pic-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.docName-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.docName{
+  color: white;
+  position: relative;
+  top: 17%;
+  float: right;
+  right: 10%;
+  transition: 1s ease-in-out;
+}
+.docName2{
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 10%;
+  color: white;
+}
+.line{
+  position: relative;
+  top: 20vh;
+}
+.filler{
+  height: 30vh;
+  position: relative;
+  bottom: 10vh;
+  right: 0;
+  left: 0;
+}
+
+.small-wrapper{
+  position: relative;
+  height: 15vh;
+  top: 20vh;
+  left: 10vw;
+  width: 80vw;
+  background: #5a9bd5;
+}
+
+.doctor-wrapper:hover{
+  cursor: pointer;
+}
+
+.toSpamArticles-Big {
+  margin-bottom: 30vh;
+}
+.toSpamArticles-Small {
+  margin-bottom: 30vh;
+}
+.animStart{
+  animation: toTop 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.animStart:hover{
+  cursor: default;
+}
+
+@keyframes toTop {
+  0%{
+    top: 20vh;
+  }
+  20%{
+    top: 10vh;
+  }
+  25%{
+    width: 60vw;
+    left: 20vw;
+  }
+  50%{
+    width: 100vw;
+    left: 0;
+  }
+  100%{
+    width: 100vw;
+    left: 0;
+    top: 10vh;
+  }
+}
+
+.doc-content{
+  position: relative;
+  height: 0;
+  width: 100%;
+  background: red;
+  overflow: auto;
+}
+.unwrap{
+  animation: unW 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes unW {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 65vh;
+  }
+}
+.bod{
+  background: #ff4f4f;
+}
+.trump{
+  overflow: hidden;
+}
+.close{
+  position: absolute;
+  right: 5%;
+  top: 27%;
+}
+.map{
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
